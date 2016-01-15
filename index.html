@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ngTimeline component test</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <style>
+    html{
+      height: 100%;
+      background: #FBFBFB;
+    }
+    body{
+      font-family:'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+    }
+  </style>
+  <link rel="stylesheet" href="dist/timeline.component.css">
+</head>
+<body ng-app="timelineTest">
+<h2>ngTimeline test</h2>
+<div ng-controller="TestController">
+  <timeline-component rows="rows" start-date="startDate"></timeline-component>
+</div>
+
+<script src="bower/angular/angular.js"></script>
+<script src="bower/lodash/lodash.js"></script>
+<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/moment/moment.js"></script>
+<script src="dist/ng-timeline.js"></script>
+<script src="test.js"></script>
+</body>
+</html>

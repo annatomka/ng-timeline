@@ -1,0 +1,29 @@
+{
+  "generator-angularjs-library": {
+    "props": {
+      "author": {
+        "name": "Anna Tomka",
+        "email": "tomkaanna@gmail.com"
+      },
+      "libraryName": {
+        "original": "ng-timeline",
+        "camelized": "ngTimeline",
+        "dasherized": "ng-timeline",
+        "slugified": "ng-timeline",
+        "parts": [
+          "ng",
+          "timeline"
+        ]
+      },
+      "includeModuleDirectives": true,
+      "includeModuleFilters": true,
+      "includeModuleServices": true,
+      "includeAngularModuleResource": false,
+      "includeAngularModuleCookies": false,
+      "includeAngularModuleSanitize": true,
+      "librarySrcDirectory": "src/ng-timeline",
+      "libraryUnitTestDirectory": "test/unit/ng-timeline",
+      "libraryUnitE2eDirectory": "test/e2e/ng-timeline"
+    }
+  }
+}

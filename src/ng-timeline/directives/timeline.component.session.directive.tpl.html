@@ -1,0 +1,8 @@
+<div class="session-item">
+    <div bs-popover data-toggle="popover" data-trigger="manual" title="Driver Session" data-container="body" data-html="true"
+         data-placement="top" data-content="{{ sessionContent }}" style="    width: 100%;
+    height: 100%;" ng-click="onClick($event)">
+        <timeline-component-unit index="$index" session="$parent.session" unit="unit"
+                                 ng-repeat="unit in session.subItems"></timeline-component-unit>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="timeline-component-row">
+    <div class="runoff-header-column">{{ row.label }}</div>
+    <div class="runoff-details-column">
+        <div class="today" ng-if="isToday" ng-style="{'left': todayOffset*100+'%'}"></div>
+        <timeline-component-session session="item" ng-repeat="item in row.items"></timeline-component-session>
+        <div class="grid-cell" ng-repeat="n in [].constructor(24) track by $index"></div>
+    </div>
+</div>

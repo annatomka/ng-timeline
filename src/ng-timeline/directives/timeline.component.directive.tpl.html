@@ -1,0 +1,20 @@
+<div class="timeline-component">
+    <div class="time-row top">
+        <div class="time-header-column"></div>
+        <div class="time-details-column">
+            <div class="time-cell" ng-repeat="n in [].constructor(24) track by $index">
+                <span>{{ $index <10 ? '0'+$index : $index }}</span>
+            </div>
+        </div>
+    </div>
+    <timeline-component-row row="row" start-date="startDate"
+                            ng-repeat="row in rows"></timeline-component-row>
+    <div class="time-row bottom">
+        <div class="time-header-column"></div>
+        <div class="time-details-column">
+            <div class="time-cell" ng-repeat="n in [].constructor(24) track by $index">
+                <span>{{ $index <10 ? '0'+$index : $index }}</span>
+            </div>
+        </div>
+    </div>
+</div>

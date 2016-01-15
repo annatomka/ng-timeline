@@ -1,0 +1,132 @@
+.timeline-component {
+  margin-top: 15px;
+  border: 1px solid #D4D4D4;
+  position: relative; }
+  .timeline-component .timeline-component-row {
+    clear: both;
+    display: block;
+    height: 34px;
+    background-color: white; }
+    .timeline-component .timeline-component-row:not(:first-child) {
+      border-top: 1px solid #D4D4D4; }
+  .timeline-component .runoff-header-column {
+    width: 8%;
+    float: left;
+    position: relative;
+    text-align: center;
+    height: 100%;
+    line-height: 2.2; }
+  .timeline-component .time-row {
+    height: 30px;
+    text-align: center;
+    background-color: #f0f0f0; }
+    .timeline-component .time-row.top {
+      border-bottom: 1px solid #B3B3B3; }
+    .timeline-component .time-row.bottom {
+      border-top: 1px solid #B3B3B3; }
+    .timeline-component .time-row .time-header-column {
+      width: 8%;
+      float: left;
+      height: 100%; }
+    .timeline-component .time-row .time-details-column {
+      width: 92%;
+      height: 100%;
+      float: left; }
+    .timeline-component .time-row .time-cell {
+      height: 100%;
+      float: left;
+      font-size: 12px;
+      line-height: 2.5;
+      position: relative; }
+      .timeline-component .time-row .time-cell span {
+        position: absolute;
+        top: 0px;
+        left: -7px; }
+  .timeline-component .runoff-details-column {
+    float: left;
+    height: 100%;
+    position: relative; }
+    .timeline-component .runoff-details-column .grid-cell {
+      height: 100%;
+      float: left;
+      position: relative; }
+    .timeline-component .runoff-details-column .session-item {
+      height: 70%;
+      top: 15%;
+      z-index: 10;
+      background: rgba(163, 218, 123, 0.47);
+      cursor: pointer;
+      transform: translateX(0);
+      opacity: 0;
+      position: absolute;
+      transition: all .4s ease-in; }
+      .timeline-component .runoff-details-column .session-item:hover {
+        background-color: rgba(141, 214, 87, 0.8); }
+        .timeline-component .runoff-details-column .session-item:hover .unit-item.job {
+          background: rgba(136, 111, 255, 0.97); }
+        .timeline-component .runoff-details-column .session-item:hover .unit-item.pause {
+          background: rgba(205, 92, 92, 0.97); }
+      .timeline-component .runoff-details-column .session-item .unit-item {
+        height: 100%;
+        position: absolute;
+        transform: translateX(0);
+        opacity: 0;
+        transition: all .4s ease-in; }
+        .timeline-component .runoff-details-column .session-item .unit-item.pause {
+          background: rgba(205, 92, 92, 0.5); }
+        .timeline-component .runoff-details-column .session-item .unit-item.job {
+          background: rgba(136, 111, 255, 0.5); }
+
+.timeline-component:not(.map-timeline-component) .runoff-details-column {
+  width: 92%; }
+
+.timeline-component:not(.map-timeline-component) .time-cell {
+  width: 4.16667%; }
+
+.timeline-component:not(.map-timeline-component) .grid-cell {
+  width: 4.16667%; }
+
+.map-timeline-component .runoff-details-column, .map-timeline-component .time-details-column {
+  width: 100% !important; }
+
+.map-timeline-component .time-row .time-cell span {
+  position: relative;
+  top: auto;
+  left: auto; }
+
+.today {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: red;
+  margin-bottom: 0px;
+  bottom: 0px; }
+
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.clearfix {
+  display: inline-block; }
+
+.clearfix {
+  display: block; }
+
+.runoff-header-column:after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background: #D4D4D4;
+  position: absolute;
+  right: 0; }
+
+.timeline-component .runoff-details-column .grid-cell:after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 1px;
+  background: #ECECEC; }
